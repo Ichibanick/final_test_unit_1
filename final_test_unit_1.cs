@@ -11,3 +11,13 @@
 Console.WriteLine("Введите элементы массива через пробел:");
 string input = Console.ReadLine();
 string[] inputArray = input.Split(' ');
+string[] resultArray = new string[] {};
+for (int i = 0; i < inputArray.Length; i++)
+        {
+            if (inputArray[i].Length <= 3)
+            {
+                resultArray[i] = inputArray[i];
+            }
+        }
+System.Console.WriteLine("Результат");
+System.Console.WriteLine(string.Join(", ", resultArray));

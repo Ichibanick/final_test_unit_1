@@ -11,6 +11,7 @@
 Console.WriteLine("Введите элементы массива через пробел:");
 string input = Console.ReadLine();
 string[] inputArray = input.Split(' ');
+int index = 0;
 int len = 0;
 for (int i = 0; i < inputArray.Length; i++)
 {
@@ -20,7 +21,6 @@ for (int i = 0; i < inputArray.Length; i++)
         }
 }
 string[] resultArray = new string[len];
-int index = 0;
 for (int i = 0; i < inputArray.Length; i++)
         {
             if (inputArray[i].Length <= 3)
